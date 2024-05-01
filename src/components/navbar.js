@@ -1,28 +1,40 @@
-import Link from "next/link";
+import { faShopify } from '@fortawesome/free-brands-svg-icons';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import "./components.css"
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
     return <>
-        <div className="container bg-white text-black p-2 w-full">
-            <div className="container w-3/4 mx-auto border-black">
-                <div className="flex flex-row justify-between">
-                    <div className="flex flex-row justify-between">
-                        <div className="mr-3 text-purple-700 font-bold text-2xl w-8 border-black">
-                            Shoppy
-                        </div>
-                        <div className="flex w-1/2 p-2 text-lg">
-                            <p className="mr-3">Home</p>
-                            <p className="mr-3">Products</p>
-                            <p className="mr-3">Cart</p>
-                            <p className="mr-3">Orders</p>
-                        </div>
-                    </div>
-                    <div className="flex p-2 text-lg">
-                        <p className="mr-3">Profile</p>
-                        <Link href="/login">Login</Link>
-                    </div>
-                </div>
+       <div className=" w-4/5 mx-auto my-6 p-2 flex flex-row">
+        <div className="first-box w-1/2 flex justify-between">
+        <div className="w-1/4 font-bold text-xl">
+    Shoppy
+</div>
+            <div className="nav-menu flex flex-row w-2/4 justify-between">
+                <p>Home</p>
+                <p>Cart</p>
+                <p>Contact</p>
+                <p>About</p>
             </div>
         </div>
+        <div className="second-box w-1/2 flex flex-row justify-end">
+            <div className='relative search-bar rounded-md'>
+                <input className="search-bar p-2 pl-8 text-xs w-60 outline-none" type="search" placeholder="What are you looking for ?"/><span className='absolute right-2 top-1/2 transform -translate-y-1/2'>
+                    <FontAwesomeIcon icon={faSearch}/>
+                </span>
+            </div>
+            <div className=' w-1/5 flex flex-row justify-around items-center'>
+           <div>
+                <FontAwesomeIcon icon={faHeart} fontSize="20px"/>
+            </div>
+            <div>
+            <FontAwesomeIcon icon={faShopify} fontSize="20px"/>
+            </div>
+            </div>
+           </div>
+        </div>
+       <hr />
     </>
 };
 
