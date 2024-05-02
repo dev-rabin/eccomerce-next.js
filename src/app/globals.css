@@ -34,3 +34,25 @@ body {
     text-wrap: balance;
   }
 } */
+.today-deal {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+
+.today-deal::-webkit-scrollbar {
+  width: 2px; 
+}
+
+.today-deal::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.today-deal::-webkit-scrollbar-thumb {
+  background-color: #cacaca; 
+  border-radius: 8px; 
+}
+
+.today-deal::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(252, 108, 108);
+}
