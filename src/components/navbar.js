@@ -3,6 +3,7 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./components.css"
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import Link from "next/link";
 
 export default function Navbar() {
     return <>
@@ -13,9 +14,9 @@ export default function Navbar() {
 </div>
             <div className="nav-menu flex flex-row w-2/4 justify-between">
                 <p>Home</p>
-                <p>Cart</p>
                 <p>Contact</p>
                 <p>About</p>
+                <Link href="/login">Sign Up</Link>
             </div>
         </div>
         <div className="second-box w-1/2 flex flex-row justify-end">

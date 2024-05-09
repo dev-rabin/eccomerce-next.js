@@ -31,7 +31,7 @@ export default function Home() {
                     </div>
                 </aside>
                 <div className="border mx-auto">
-                    <Image src="/images/iphone2.jpg" alt="iPhone" width={895} height={400} />
+                    <img src="/image/iphone2.jpg" alt="iPhone" />
                 </div>
             </div>
             <hr />
