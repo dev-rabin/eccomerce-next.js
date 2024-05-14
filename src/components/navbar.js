@@ -16,7 +16,7 @@ export default function Navbar() {
                 <p>Home</p>
                 <p>Contact</p>
                 <p>About</p>
-                <Link href="/login">Sign Up</Link>
+                <Link href="/signup">Sign Up</Link>
             </div>
         </div>
         <div className="second-box w-1/2 flex flex-row justify-end">

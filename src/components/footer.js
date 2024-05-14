@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <>
@@ -19,7 +21,7 @@ export default function Footer() {
                     <div className="flex justify-between flex-col">
                         <p className="text-xl font-medium">Account</p>
                         <p>My Account</p>
-                        <p>Login / Register</p>
+                        <p><Link href="/login">Login</Link> / <span><Link href="/signup">Register</Link></span></p>
                         <p>Cart</p>
                         <p>Shop</p>
                     </div>
