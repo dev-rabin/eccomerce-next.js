@@ -1,4 +1,4 @@
-import { createUser } from "@/utils/api";
+import { createUser } from "@/utils/api/user_api/api";
 import { useState } from "react";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";

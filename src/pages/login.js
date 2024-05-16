@@ -2,7 +2,7 @@ import Footer from "@/components/footer";
 import "../app/globals.css";
 import Navbar from "@/components/navbar";
 import Link from "next/link";
-import { loginUser } from "@/utils/api";
+import { loginUser } from "@/utils/api/user_api/api";
 import { useState } from "react";
 
 
